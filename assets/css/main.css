@@ -1,0 +1,171 @@
+html {
+  font-family: 'ABeeZee', sans-serif;
+
+}
+
+a {
+  text-decoration: none;
+  color: #d500f9;
+}
+
+img{
+  max-width: 100%;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+
+.title {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.paragraph {
+  line-height: 1.8em;
+  font-weight: 200;
+}
+
+.container-nav {
+  background: #114357;
+}
+
+.container {
+  background: #114357;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #F29492, #114357);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #F29492, #114357);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  max-width: 960px;
+  /*max-height: 500px;*/
+  width: 100%;
+  height: 80vh;
+  background-color: white;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 5px;
+  position: relative;
+  padding: 1.8em;
+  overflow: scroll;
+
+}
+
+.content{
+  padding: 1em;
+}
+
+td{
+  display: block;
+  width: 100%;
+}
+td:nth-of-type(1){
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #642B73;
+}
+
+th{
+  display: none;
+}
+
+
+.actions {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
+
+.close {
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  color: white;
+  background-color: #642B73;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  cursor: pointer;
+  font-weight: 200;
+}
+
+.plataforma {
+  align-content: center;
+  padding: 1px;
+}
+
+
+
+.table {
+  width: 100%;
+  border-spacing: 0;
+}
+
+.table td,
+.table th {
+  padding: 1em;
+  text-align: left;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f3e5f5;
+}
+
+.title-item {
+  border-bottom: #C6426E solid 2px;
+  padding-bottom: 1em;
+  font-size: 2em;
+
+}
+
+.position {
+  background-color: #C6426E;
+  color: white;
+  padding: 0.5em;
+  border-radius: 4px;
+  margin-right: 0.5em;
+
+}
+
+.main-image {
+  float: left;
+  margin-right: 1em;
+  height: 250px;
+}
+
+@media(min-width:900px){
+
+ th{
+   display: table-cell;
+ }
+
+ td{
+   width: auto;
+   display: table-cell;
+ }
+
+ td:nth-of-type(1){
+  font-size: 1em;
+ }
+
+ .content{
+   padding: 1.8em;
+ }
+
+}
+
+@media(max-height:550px){
+  .content{
+    height: 500px;
+  }
+}
